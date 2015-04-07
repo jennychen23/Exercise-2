@@ -1,0 +1,24 @@
+/* Globals.scss */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Cinzel+Decorative:900);
+
+$color: #262626;
+$background-color: #fff;
+$base-font-size: 25px;
+$logo-color: #FE9A2E;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size) {
+    @return($px / $base) * 1em;
+}
+
+@mixin body-font-light {
+    font-family: 'sourcesanspro', helvetica, verdana, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin headline-font {
+    font-family: 'cinzeldecorative', helvetica, verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900; 
+}

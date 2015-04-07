@@ -1,0 +1,26 @@
+/* Base.scss */
+
+body {
+    background-color: $background-color;
+    color: $color;
+    @include body-font-light;
+    font-size: $base-font-size;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    @include headline-font;
+    line-height: 1;
+    overflow: hidden;
+}
+
+a {
+    font-size: em(20px);
+    transition: color 300ms linear;
+    &:hover {
+        transition: color 300ms linear;
+    }
+}
